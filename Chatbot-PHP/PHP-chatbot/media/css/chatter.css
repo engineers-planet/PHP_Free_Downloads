@@ -1,0 +1,86 @@
+.chat-div
+{
+	padding: 20px;
+	background: #e6e6e6;
+	border-radius: 10px;
+}
+
+.chat-app-title
+{
+	color: #0caf50;
+}
+
+.msg-input
+{
+	height: 60px;
+	width: inherit;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.send-btn
+{
+	background: #000000;
+	color: #ffffff;
+	padding: 6px;
+	border-radius: 5px;
+	border-color: #000000;
+}
+
+.msg-disp
+{
+	padding: 10px;
+	background: #ffffff;
+	color: #1a1a1a;
+	border: 1px solid skyblue;
+	border-radius: 10px;
+	min-height: 300px;
+	max-height: 300px;
+	width: inherit;
+	overflow: scroll;
+}
+
+.msg-sender
+{
+	font-weight: bold;
+	color: skyblue;
+}
+
+.bot-resp
+{
+	font-weight: bold;
+	color: lime;
+}
+
+.the-msg-text
+{
+	text-align: right;
+	background-color: #ccffff;
+	padding: 10px;
+	margin-left: 50%;
+	margin-bottom: 4px;
+	border-radius: 10px;
+}
+.the-resp
+{
+	background-color: #b3ffb3;
+	padding: 10px;
+	margin-right: 50%;
+	margin-bottom: 4px;
+	border-radius: 10px;
+}
+
+.msg-sender, .msg-content, .bot-resp
+{
+	text-align: left;
+}
+
+.msg-sender
+{
+	border-bottom: 1px solid skyblue;
+}
+
+.bot-resp
+{
+	border-bottom: 1px solid lime;
+}

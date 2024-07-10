@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<extension type='component' version='3.0' method='upgrade'>
+	<name>com_chatter</name>
+	<author>Harshawardhan Natu</author>
+	<version>1.0.0</version>
+	<description>This is chat component</description>
+
+	<media destination='com_chatter' folder='media'>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<files folder='components/com_chatter'>
+		<filename>chatter.php</filename>
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>simple_html_dom.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+	</files>
+
+	<install>
+		<sql>
+			<file charset='utf8' driver='mysql'>install.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file charset='utf8' driver='mysql'>uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<update>
+		<sql>
+			<file charset='utf8' driver='mysql'>update.sql</file>
+		</sql>
+	</update>	
+
+
+	<administration>
+		<files folder='administrator/components/com_chatter'>
+			<filename>chatter.php</filename>
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<filename>update.sql</filename>
+		</files>
+
+		<menu link='index.php?option=com_chatter'>Chat Options</menu>
+
+		<submenu>
+			<menu link='option=com_chatter&amp;task=chat_hist'>Chat History</menu>
+			<menu link='option=com_chatter&amp;task=block_usr'>Block User</menu>
+		</submenu>
+	</administration>
+
+</extension>
